@@ -1,0 +1,484 @@
+/* ===== TEMPLATE: CLÍNICA & SAÚDE - REACT ===== */
+/* Personalize as variáveis abaixo para mudar toda a identidade visual */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #0EA5E9;
+    /* COR PRINCIPAL — substitua pelo azul/verde da clínica */
+    --primary-dark: #0284C7;
+    --primary-light: #EFF9FF;
+    --text: #0F172A;
+    --text-muted: #64748B;
+    --bg: #FFFFFF;
+    --alt: #F8FAFC;
+    --border: #E2E8F0;
+    --dark: #0A0F1E;
+    --font: 'Inter', sans-serif;
+    --radius: 14px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-cta {
+    background: var(--primary);
+    color: #fff;
+    padding: 9px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: opacity 0.2s;
+}
+
+.nav-cta:hover {
+    opacity: 0.88;
+}
+
+/* Hero */
+.hero {
+    padding: 140px 32px 80px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, #fff 70%);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto 36px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.25s;
+    box-shadow: 0 6px 24px rgba(14, 165, 233, 0.3);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+}
+
+.btn-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: var(--primary);
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.25s;
+}
+
+.btn-white:hover {
+    transform: translateY(-2px);
+}
+
+/* Container & Section */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 32px;
+}
+
+.section--alt {
+    background: var(--alt);
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.section-sub {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 52px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+}
+
+.card--hover {
+    transition: all 0.25s;
+}
+
+.card--hover:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 12px 32px rgba(14, 165, 233, 0.12);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.card p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-img-placeholder {
+    background: var(--primary-light);
+    border-radius: var(--radius);
+    aspect-ratio: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border: 1px solid var(--border);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.about-content p {
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.check-list li {
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.check-list li::before {
+    content: "✓";
+    color: var(--primary);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+}
+
+.stars {
+    color: #FBBF24;
+    margin-bottom: 12px;
+}
+
+.testi-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testi-avatar {
+    width: 42px;
+    height: 42px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.testi-author strong {
+    display: block;
+    font-size: 0.875rem;
+}
+
+.testi-role {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* FAQ */
+.faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font);
+    color: var(--text);
+    gap: 12px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.faq-answer.open {
+    max-height: 240px;
+}
+
+.faq-answer p {
+    padding-bottom: 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.faq-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.faq-icon.open {
+    transform: rotate(45deg);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 32px;
+}
+
+.cta-section h2 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.cta-section p {
+    opacity: 0.8;
+    margin-bottom: 32px;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    padding: 32px;
+    font-size: 0.8rem;
+}
+
+.footer p+p {
+    margin-top: 8px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* WhatsApp FAB */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    transition: transform 0.25s;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.1);
+}
+
+/* Muted helpers */
+.muted {
+    color: var(--text-muted);
+}
+
+.small {
+    font-size: 0.85rem;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 120px 16px 60px;
+    }
+
+    .section {
+        padding: 60px 16px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
