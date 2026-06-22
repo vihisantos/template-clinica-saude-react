@@ -1,57 +1,61 @@
-# Template Clínica & Saúde — React + Vite
+# VidaPlena Clínica - Premium Template
 
-Template profissional para clínicas, consultórios e profissionais de saúde.
+<p align="center">
+  <strong>Template premium para clínicas e consultórios médicos.</strong>
+  <br>
+  Design clean com dark mode, FAQ interativo e agendamento pelo WhatsApp.
+</p>
 
-## 🚀 Como rodar localmente
+<p align="center">
+  <a href="https://vihisantos.github.io/template-clinica-saude-react/">
+    <img src="https://img.shields.io/badge/Ver_Projeto-online-059669?style=for-the-badge&logo=github&logoColor=white" alt="Ver Projeto">
+  </a>
+</p>
 
-```bash
-npm install
-npm run dev
-```
-
-Abra [http://localhost:5173](http://localhost:5173) no seu navegador.
-
-## 🏗️ Como fazer o build de produção
-
-```bash
-npm run build
-```
-
-Os arquivos finais estarão na pasta `dist/`. Use `npm run preview` para testar antes de subir.
-
-## ☁️ Como publicar no Vercel (recomendado)
-
-1. Crie uma conta em [vercel.com](https://vercel.com)
-2. Instale o CLI: `npm i -g vercel`
-3. Rode `vercel` na pasta do projeto e siga os passos
-4. Resultado: URL pública grátis em segundos!
-
-Ou simplesmente conecte o repositório GitHub no painel do Vercel.
-
-## ✏️ Como personalizar
-
-1. Abra `src/App.tsx`
-2. Substitua todos os `[colchetes]` pelo conteúdo real do cliente
-3. Em `vite.config.ts`, `index.html` e `src/index.css`, ajuste cores e fontes
-4. Troque as variáveis CSS em `src/index.css` para mudar toda a paleta de cores
-
-## 📁 Estrutura
-
-```
-src/
- ├── App.tsx      ← Conteúdo e componentes da página
- ├── index.css    ← Estilos (customize as variáveis CSS no :root)
- └── main.tsx     ← Entry point React (não precisa editar)
-index.html         ← SEO (título, meta description)
-```
-
-## 🎨 Variáveis de cor principais (em `src/index.css`)
-
-| Variável | O que controla |
-|----------|---------------|
-| `--primary` | Cor principal (botões, destaques) |
-| `--primary-dark` | Hover/gradientes |
-| `--primary-light` | Fundos suaves |
+<p align="center">
+  <img src="https://img.shields.io/badge/React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 18">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion">
+</p>
 
 ---
-*Template desenvolvido pela [Capybara Holding](https://capybaraholding.com.br)*
+
+## Sobre
+
+**VidaPlena Clínica** é um template premium para clínicas e consultórios médicos. Design clean com dark mode, FAQ interativo, depoimentos de pacientes e agendamento pelo WhatsApp.
+
+---
+
+## Tech Stack
+
+| Tecnologia | Propósito |
+|---|---|
+| **React 18** | Biblioteca de interface |
+| **TypeScript** | Tipagem estática |
+| **Vite** | Build tool |
+| **Tailwind CSS** | Estilização utilitária |
+| **Framer Motion** | Animações |
+| **Lucide React** | Ícones |
+
+---
+
+## Funcionalidades
+
+- Dark mode toggle
+- FAQ interativo com accordion
+- Animações de scroll (Framer Motion)
+- Menu mobile responsivo
+- Depoimentos de pacientes
+- Agendamento pelo WhatsApp
+- Estatísticas da clínica
+
+---
+
+<p align="center">
+  <br>
+  <sub>Desenvolvido por <a href="https://capybaraholding.com.br" target="_blank"><strong>Capybara Holding</strong></a></sub>
+  <br>
+  <sub>&copy; 2026 VidaPlena Clínica. Todos os direitos reservados.</sub>
+</p>
