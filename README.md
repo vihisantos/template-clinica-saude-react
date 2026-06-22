@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://vihisantos.github.io/template-clinica-saude-react/">
-    <img src="https://img.shields.io/badge/Ver_Projeto-online-059669?style=for-the-badge&logo=github&logoColor=white" alt="Ver Projeto">
+    <img src="https://img.shields.io/badge/Ver_Projeto-online-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="Ver Projeto">
   </a>
 </p>
 

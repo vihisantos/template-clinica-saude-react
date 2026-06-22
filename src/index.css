@@ -3,15 +3,15 @@
 @theme {
     --font-sans: 'DM Sans', sans-serif;
     --font-display: 'DM Serif Display', serif;
-    --color-brand: #059669;
-    --color-brand-dark: #047857;
-    --color-teal: #0D9488;
+    --color-brand: #2563EB;
+    --color-brand-dark: #1D4ED8;
+    --color-teal: #3B82F6;
 }
 
 :root {
     --bg: #FAFBFC;
-    --bg-alt: #F0FDF4;
-    --bg-dark: #022C22;
+    --bg-alt: #EFF6FF;
+    --bg-dark: #0F172A;
     --text: #0F172A;
     --text-muted: #64748B;
     --card: #FFFFFF;
@@ -19,12 +19,12 @@
 }
 
 .dark {
-    --bg: #022C22;
-    --bg-alt: #064E3B;
-    --bg-dark: #012118;
-    --text: #F0FDF4;
-    --text-muted: #86EFAC;
-    --card: #064E3B;
+    --bg: #0F172A;
+    --bg-alt: #1E293B;
+    --bg-dark: #020617;
+    --text: #F1F5F9;
+    --text-muted: #94A3B8;
+    --card: #1E293B;
     --border: rgba(255, 255, 255, 0.08);
 }
 
